@@ -202,14 +202,14 @@ Docker uses Linux kernel features such as namespaces for isolation and cgroups f
 
 What are the best practices for writing a Dockerfile?
 
-o	Use small base images.
+ o	Use small base images.
 
-o	Leverage multi-stage builds.
+ o	Leverage multi-stage builds.
 
-o	Avoid using latest tag for images.
+ o	Avoid using latest tag for images.
 
-o	Minimize the number of layers.
+ o	Minimize the number of layers.
 
-o	Use .dockerignore to exclude unnecessary files.
+ o	Use .dockerignore to exclude unnecessary files.
 
-o	Specify a non-root user.
+ o	Specify a non-root user.
