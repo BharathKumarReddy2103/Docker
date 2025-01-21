@@ -48,7 +48,7 @@
 
 11. What is the command to remove a Docker container?
 
-   docker rm <container_id>
+    docker rm <container_id>
 
 12. How do you remove an image in Docker?
 
