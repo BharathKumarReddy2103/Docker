@@ -69,15 +69,15 @@
 
 16. What command is used to enter an interactive shell inside a running container?
 
-   docker exec -it <container_id> bash
+    docker exec -it <container_id> bash
 
 17. How do you list all Docker networks?
 
-   docker network ls
+    docker network ls
 
 18. What is the default network mode in Docker?
 
-   bridge.
+    bridge.
 
 19. How do you check Docker version installed on your system?
 
