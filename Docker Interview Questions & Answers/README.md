@@ -156,8 +156,8 @@ What is the purpose of the docker prune command?
 
 The docker prune command removes unused Docker objects such as stopped containers, dangling images, and unused networks.
 
-23.	What is an overlay network in Docker?
-24.	
+What is an overlay network in Docker?
+
 An overlay network allows containers running on different hosts to communicate securely as if they were on the same network.
 
 How do you secure Docker containers?
