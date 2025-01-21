@@ -1,44 +1,50 @@
 **Here are 50 Docker Interview Questions from basic to advanced along with their answers:**
 
-What is Docker?
+1.What is Docker?
 
-Docker is an open-source platform that enables developers and system administrators to build, ship, and run applications in lightweight, portable containers. It simplifies application deployment by providing a consistent environment across development, testing, and production.
+  Docker is an open-source platform that enables developers and system administrators to build, ship, and run applications 
+  in lightweight, portable containers. It simplifies application deployment by providing a consistent environment across 
+  development, testing, and production.
 
-What is a Docker container?
+2.What is a Docker container?
 
-A Docker container is a lightweight, standalone, and executable software package that includes everything needed to run an application: code, runtime, libraries, and dependencies.
+  A Docker container is a lightweight, standalone, and executable software package that includes everything needed to run 
+  an application: code, runtime, libraries, and dependencies.
 
-How is a Docker container different from a virtual machine?
+3.How is a Docker container different from a virtual machine?
 
-Docker containers share the host OS kernel and are lightweight compared to virtual machines, which include a full OS. Containers start faster and use fewer resources.
+  Docker containers share the host OS kernel and are lightweight compared to virtual machines, which include a full OS. 
+  Containers start faster and use fewer resources.
 
-What is a Docker image?
+4.What is a Docker image?
 
-A Docker image is a read-only template that contains the application code, dependencies, and instructions to create a Docker container.
+  A Docker image is a read-only template that contains the application code, dependencies, and instructions to create a 
+  Docker container.
 
-What is the difference between a Docker image and a container?
+5.What is the difference between a Docker image and a container?
 
-An image is a static file that defines the environment and configuration for a container. A container is a running instance of an image.
+  An image is a static file that defines the environment and configuration for a container. A container is a running 
+  instance of an image.
 
-What is Dockerfile?
+6.What is Dockerfile?
 
-A Dockerfile is a text file containing a series of instructions to build a Docker image.
+  A Dockerfile is a text file containing a series of instructions to build a Docker image.
 
-What is the purpose of the docker run command?
+7.What is the purpose of the docker run command?
 
-The docker run command is used to create and start a container from a specified image.
+  The docker run command is used to create and start a container from a specified image.
 
-What is the syntax to build an image from a Dockerfile?
+8.What is the syntax to build an image from a Dockerfile?
 
-docker build -t <image_name> .
+  docker build -t <image_name> .
 
-What command is used to list running containers?
+9.What command is used to list running containers?
 
-docker ps
+  docker ps
 
-How to stop a running container?
+10.How to stop a running container?
 
-docker stop <container_id>
+   docker stop <container_id>
 
 What is the command to remove a Docker container?
 
