@@ -1,6 +1,7 @@
 **Here are 50 Docker Interview Questions from basic to advanced along with their answers:**
 
 What is Docker?
+
 Docker is an open-source platform that enables developers and system administrators to build, ship, and run applications in lightweight, portable containers. It simplifies application deployment by providing a consistent environment across development, testing, and production.
 
 What is a Docker container?
