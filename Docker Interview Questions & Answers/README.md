@@ -109,116 +109,128 @@
 
     Docker Compose is a tool for defining and running multi-container applications using a docker-compose.yml file.
 
-How do you scale containers using Docker Compose?
+26. How do you scale containers using Docker Compose?
 
-docker-compose up --scale <service_name>=3
+    docker-compose up --scale <service_name>=3
 
-What is the difference between a bind mount and a volume?
+27. What is the difference between a bind mount and a volume?
 
-Bind mounts link a host directory to a container. Volumes are managed by Docker and are more suitable for containerized environments.
+    Bind mounts link a host directory to a container. Volumes are managed by Docker and are more suitable for containerized 
+    environments.
 
-How do you pass environment variables to a Docker container?
+28. How do you pass environment variables to a Docker container?
 
--e flag: docker run -e VAR_NAME=value <image_name>
+    -e flag: docker run -e VAR_NAME=value <image_name>
 
-What is a multi-stage build in Docker?
+29. What is a multi-stage build in Docker?
 
-A multi-stage build allows creating smaller and more efficient images by copying only the necessary artifacts from intermediate stages to the final stage.
+    A multi-stage build allows creating smaller and more efficient images by copying only the necessary artifacts from 
+    intermediate stages to the final stage.
 
-How do you copy files from a running Docker container to the host?
+30. How do you copy files from a running Docker container to the host?
 
-docker cp <container_id>:/path/to/file /host/path
+    docker cp <container_id>:/path/to/file /host/path
 
-How do you set resource limits for a container?
+31. How do you set resource limits for a container?
 
-Using flags such as --memory and --cpu in the docker run command.
+    Using flags such as --memory and --cpu in the docker run command.
 
-What are Docker namespaces?
+32. What are Docker namespaces?
 
-Namespaces provide isolation for containers, including process isolation (PID), network isolation, and file system isolation.
+    Namespaces provide isolation for containers, including process isolation (PID), network isolation, and file system 
+    isolation.
 
-What is Docker Swarm?
+33. What is Docker Swarm?
 
-Docker Swarm is Docker's native clustering and orchestration tool, enabling the management of a cluster of Docker nodes as a single virtual system.
+    Docker Swarm is Docker's native clustering and orchestration tool, enabling the management of a cluster of Docker nodes 
+    as a single virtual system.
 
-What is a Docker Registry?
+34. What is a Docker Registry?
 
-A Docker Registry is a repository for storing and distributing Docker images. Examples include Docker Hub and private registries.
+    A Docker Registry is a repository for storing and distributing Docker images. Examples include Docker Hub and private 
+    registries.
 
-How do you push an image to Docker Hub?
+35. How do you push an image to Docker Hub?
 
-docker push <username>/<image_name>:<tag>
+    docker push <username>/<image_name>:<tag>
 
-What is the difference between docker stop and docker kill?
+36. What is the difference between docker stop and docker kill?
 
-docker stop sends a SIGTERM signal to gracefully stop a container. docker kill sends a SIGKILL signal, forcefully stopping it.
+    docker stop sends a SIGTERM signal to gracefully stop a container. docker kill sends a SIGKILL signal, forcefully 
+    stopping it.
 
-How do you expose a port while running a container?
+37. How do you expose a port while running a container?
 
-docker run -p 8080:80 <image_name>
+    docker run -p 8080:80 <image_name>
 
-How can you configure a container to restart automatically?
+38. How can you configure a container to restart automatically?
 
-Use the --restart option with docker run (e.g., --restart=always).
+    Use the --restart option with docker run (e.g., --restart=always).
 
-What is the purpose of the docker prune command?
+39. What is the purpose of the docker prune command?
 
-The docker prune command removes unused Docker objects such as stopped containers, dangling images, and unused networks.
+    The docker prune command removes unused Docker objects such as stopped containers, dangling images, and unused networks.
 
-What is an overlay network in Docker?
+40. What is an overlay network in Docker?
 
-An overlay network allows containers running on different hosts to communicate securely as if they were on the same network.
+    An overlay network allows containers running on different hosts to communicate securely as if they were on the same 
+    network.
 
-How do you secure Docker containers?
+41. How do you secure Docker containers?
 
-o	Use minimal base images.
-o	Keep Docker and images updated.
-o	Run containers as non-root users.
-o	Use Docker secrets for sensitive data.
-o	Limit container capabilities with security options.
+    o	Use minimal base images.
+    o	Keep Docker and images updated.
+    o	Run containers as non-root users.
+    o	Use Docker secrets for sensitive data.
+    o	Limit container capabilities with security options.
 
-What is the difference between Docker and Kubernetes?
+42. What is the difference between Docker and Kubernetes?
 
-Docker is a containerization platform, while Kubernetes is an orchestration platform for managing containers, including scaling, load balancing, and deployment.
+    Docker is a containerization platform, while Kubernetes is an orchestration platform for managing containers, including 
+    scaling, load balancing, and deployment.
 
-How can you debug a failed Docker build?
+43. How can you debug a failed Docker build?
 
-Use the --progress=plain and --no-cache options with docker build to get detailed output and bypass cached layers.
+    Use the --progress=plain and --no-cache options with docker build to get detailed output and bypass cached layers.
 
-What are Docker storage drivers?
+44. What are Docker storage drivers?
 
-Storage drivers manage how images and containers store and access data on the host system. Common drivers include overlay2, AUFS, and btrfs.
+    Storage drivers manage how images and containers store and access data on the host system. Common drivers include 
+    overlay2, AUFS, and btrfs.
 
-What is the significance of the HEALTHCHECK instruction in Dockerfile?
+45. What is the significance of the HEALTHCHECK instruction in Dockerfile?
 
-The HEALTHCHECK instruction defines how Docker checks the health of a container, allowing it to mark a container as healthy or unhealthy.
+    The HEALTHCHECK instruction defines how Docker checks the health of a container, allowing it to mark a container as 
+    healthy or unhealthy.
 
-How do you deploy a containerized application in production?
+46. How do you deploy a containerized application in production?
 
-Use orchestration tools like Kubernetes, Docker Swarm, or cloud-native services such as AWS ECS/EKS.
+    Use orchestration tools like Kubernetes, Docker Swarm, or cloud-native services such as AWS ECS/EKS.
 
-What are Docker secrets, and how do they work?
+47. What are Docker secrets, and how do they work?
 
-Docker secrets securely store and manage sensitive information such as passwords and API keys, accessible only to authorized containers.
+    Docker secrets securely store and manage sensitive information such as passwords and API keys, accessible only to 
+    authorized containers.
 
-What is BuildKit in Docker?
+48. What is BuildKit in Docker?
 
-BuildKit is a feature in Docker that speeds up builds, enables parallel execution, and supports caching and advanced features like multi-stage builds.
+    BuildKit is a feature in Docker that speeds up builds, enables parallel execution, and supports caching and advanced 
+    features like multi-stage builds.
 
-How does Docker ensure isolation between containers?
+49. How does Docker ensure isolation between containers?
 
-Docker uses Linux kernel features such as namespaces for isolation and cgroups for resource allocation.
+    Docker uses Linux kernel features such as namespaces for isolation and cgroups for resource allocation.
 
-What are the best practices for writing a Dockerfile?
+50. What are the best practices for writing a Dockerfile?
 
- o	Use small base images.
+    o	Use small base images.
 
- o	Leverage multi-stage builds.
+    o	Leverage multi-stage builds.
 
- o	Avoid using latest tag for images.
+    o	Avoid using latest tag for images.
 
- o	Minimize the number of layers.
+    o	Minimize the number of layers.
 
- o	Use .dockerignore to exclude unnecessary files.
+    o	Use .dockerignore to exclude unnecessary files.
 
- o	Specify a non-root user.
+    o	Specify a non-root user.
