@@ -100,6 +100,9 @@ What is the purpose of the docker-compose tool?
 
 Docker Compose is a tool for defining and running multi-container applications using a docker-compose.yml file.
 
+How do you scale containers using Docker Compose?
+docker-compose up --scale <service_name>=3
+
 What is the difference between a bind mount and a volume?
 
 Bind mounts link a host directory to a container. Volumes are managed by Docker and are more suitable for containerized environments.
