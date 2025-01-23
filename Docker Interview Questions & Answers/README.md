@@ -1,4 +1,4 @@
-**Here are 50 Docker Interview Questions from basic to advanced along with their answers:**
+**Here are 50 Docker Interview Questions from basic to advanced along with their answers for DevOps Interviews:**
 
 1. What is Docker?
 
