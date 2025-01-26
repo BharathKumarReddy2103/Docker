@@ -1,4 +1,4 @@
-Some Best Practices for using Docker effectively:
+**Some Best Practices for using Docker effectively:**
 
 ### 1. Use Official Images
 
