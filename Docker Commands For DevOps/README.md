@@ -1,4 +1,4 @@
-Essential Docker Commands that DevOps Engineers Commonly use in their Day-to-Day activities:
+**Essential Docker Commands that DevOps Engineers Commonly use in their Day-to-Day activities:**
 
 ### Basic Commands
 
