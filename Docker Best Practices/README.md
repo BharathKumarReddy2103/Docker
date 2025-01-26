@@ -2,7 +2,8 @@ Some Best Practices for using Docker effectively:
 
 ### 1. Use Official Images
 
-Whenever possible, use official Docker images from trusted sources like Docker Hub. These images are maintained and updated regularly, ensuring security and reliability.
+       Whenever possible, use official Docker images from trusted sources like Docker Hub. These images are maintained and updated regularly, ensuring security and 
+       reliability.
 
 ### 2. Minimize Image Size
 
