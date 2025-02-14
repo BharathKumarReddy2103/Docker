@@ -500,6 +500,8 @@ git push origin main
 
 🔹 Follow me on GitHub for more DevOps content
 
+💬 Drop a comment or **open a GitHub issue** if you have more optimization tips 🚀
+
 ---
 
 This real-world example ensures that your Docker images are optimized, secure, and production-ready. 🚀
