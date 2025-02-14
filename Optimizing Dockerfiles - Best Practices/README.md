@@ -474,34 +474,34 @@ git push origin main
 
 🔹 **Summary of Optimizations**
 
-✅ Minimal base image (node:18-slim)
+✅ **Minimal base image** (node:18-slim)
 
-✅ Efficient layer caching (COPY package.json first)
+✅ **Efficient layer caching** (COPY package.json first)
 
-✅ Uses non-root user for security
+✅ **Uses non-root user for security**
 
-✅ Includes .dockerignore for optimized builds
+✅ **Includes** .dockerignore **for optimized builds**
 
-✅ Defines environment variables (NODE_ENV=production)
+✅ **Defines environment variables** (NODE_ENV=production)
 
-✅ Exposes only required ports (3000)
+✅ **Exposes only required ports** (3000)
 
-✅ Adds a health check for reliability
+✅ **Adds a health check for reliability**
 
-✅ Runs container with CPU & memory limits
+✅ **Runs container with CPU & memory limits**
 
 ---
 
 🚀 **Next Steps**
 
-🔹 Fork this repository to keep a reference
+🔹 **Fork this repository** to keep a reference
 
-🔹 Star this repository if you find it useful
+🔹 **Star this repository** if you find it useful
 
-🔹 Follow me on GitHub for more DevOps content
+🔹 **Follow me on GitHub** for more DevOps content
 
 💬 Drop a comment or **open a GitHub issue** if you have more optimization tips 🚀
 
 ---
 
-This real-world example ensures that your Docker images are optimized, secure, and production-ready. 🚀
+This **real-world example** ensures that your **Docker images are optimized, secure, and production-ready**. 🚀
