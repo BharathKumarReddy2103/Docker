@@ -120,7 +120,7 @@ CMD ["node", "server.js"]
 
 **5. Use .dockerignore to Reduce Build Context**
 
-The .dockerignore file helps exclude unnecessary files from being copied to the image, speeding up builds.
+The .dockerignore file helps **exclude unnecessary files** from being copied to the image, speeding up builds.
 
 ✅ **Example: .dockerignore**
 
@@ -133,15 +133,15 @@ Dockerfile
 README.md
 ```
 
-•	Prevents large files from being added to the image.
+•	Prevents **large files** from being added to the image.
 
-•	Reduces attack surface by excluding secrets like .env.
+•	Reduces **attack surface** by excluding secrets like .env.
 
 ---
 
 **6. Use COPY Instead of ADD**
 
-The ADD command automatically extracts compressed files and can be a security risk if misused.
+The ADD command **automatically extracts compressed files** and can be a security risk if misused.
 Always prefer COPY unless extraction is required.
 
 ✅ **Example**
@@ -157,9 +157,9 @@ RUN tar -xzf /tmp/myapp.tar.gz -C /app && rm /tmp/myapp.tar.gz
 
 🔹 **Why**?
 
-•	COPY is predictable, while ADD may introduce unwanted behavior.
+•	COPY is **predictable**, while ADD may introduce **unwanted behavior.**
 
-•	Helps prevent security vulnerabilities.
+•	Helps **prevent security vulnerabilities.**
 
 ---
 
@@ -183,7 +183,7 @@ RUN apt-get install -y curl unzip
 
 Docker caches image layers to improve build times.
 
-Reordering Dockerfile instructions maximizes cache efficiency.
+Reordering Dockerfile instructions **maximizes cache efficiency.**
 
 ✅ **Best Practice**
 
@@ -206,7 +206,7 @@ CMD ["node", "server.js"]
 
 **Why**?
 
-•	npm install runs only when package.json changes, making builds faster.
+•	npm install runs only when package.json changes, making builds **faster.**
 
 ---
 
@@ -220,15 +220,15 @@ Health checks ensure your container is running properly.
 HEALTHCHECK --interval=30s --timeout=5s --retries=3 CMD curl -f http://localhost:8080/ || exit 1
 ```
 
-•	Helps monitor application health.
+•	Helps **monitor application health.**
 
-•	Ensures Kubernetes reschedules failed containers.
+•	Ensures Kubernetes **reschedules failed containers.**
 
 ---
 
 **10. Keep Your Images Updated & Secure**
 
-Regularly update base images and scan them for vulnerabilities.
+Regularly update base images and **scan them for vulnerabilities.**
 
 ✅ **Use Image Scanners**
 
@@ -238,11 +238,11 @@ trivy image myapp:latest
 
 🔹 **Security Tools**:
 
-•	Trivy (Open-source vulnerability scanner)
+•	**Trivy** (Open-source vulnerability scanner)
 
-•	Docker Scout
+•	**Docker Scout**
 
-•	Snyk
+•	**Snyk**
 
 ---
 
@@ -268,15 +268,15 @@ resources:
     cpu: "250m"
 ```
 
-•	Prevents OOM (Out of Memory) crashes.
+•	Prevents **OOM (Out of Memory) crashes.**
 
-•	Ensures fair resource allocation.
+•	Ensures **fair resource allocation.**
 
 ---
 
 **12. Reduce Attack Surface with Read-Only Filesystem**
 
-Containers should be read-only where possible.
+Containers should be **read-only** where possible.
 
 ✅ **Example**
 
@@ -284,33 +284,33 @@ Containers should be read-only where possible.
 docker run --read-only myapp
 ```
 
-•	Prevents malicious modifications.
+•	Prevents **malicious modifications.**
 
-•	Enhances security.
+•	Enhances **security.**
 
 ---
 
 **Final Thoughts**
 
-Optimizing Dockerfiles improves security, speeds up builds, and reduces costs. By following these best practices, your Docker containers will be faster, leaner, and more secure.
+Optimizing Dockerfiles **improves security, speeds up builds, and reduces costs**. By following these best practices, your Docker containers will be **faster, leaner, and more secure.**
 
 ✅ **Key Takeaways**
 
-•	Use minimal base images (alpine, slim).
+•	Use **minimal** base images (alpine, slim).
 
-•	Reduce layers by combining commands.
+•	Reduce **layers** by **combining commands**.
 
-•	Use multi-stage builds to shrink final images.
+•	Use **multi-stage builds** to shrink final images.
 
-•	Run containers as non-root.
+•	Run containers as **non-root.**
 
-•	Use .dockerignore to exclude unnecessary files.
+•	Use .dockerignore to **exclude unnecessary files.**
 
-•	Optimize caching to speed up builds.
+•	Optimize **caching** to speed up builds.
 
-•	Enable health checks & resource limits.
+•	Enable **health checks & resource limits.**
 
-•	Keep images updated & scan for vulnerabilities.
+•	Keep images **updated & scan for vulnerabilities.**
 
 --- 
 
