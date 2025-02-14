@@ -26,17 +26,17 @@ FROM ubuntu:latest
 FROM python:3.9-slim
 ```
 
-•	Alpine is lightweight but may lack libraries, requiring additional installation.
+•	**Alpine** is lightweight but may lack libraries, requiring additional installation.
 
-•	Slim versions of base images strip unnecessary files, reducing size.
+•	**Slim** versions of base images strip unnecessary files, reducing size.
 
-🔹 Use Cases:
+🔹 **Use Cases**:
   
-•	Alpine (for lightweight applications)
+•	**Alpine** (for lightweight applications)
 
-•	Slim (for balancing compatibility & size)
+•	**Slim** (for balancing compatibility & size)
 
-•	Distroless (for production security)
+•	**Distroless** (for production security)
 
 ---
 
@@ -57,15 +57,15 @@ RUN apt-get update && apt-get install -y curl vim && rm -rf /var/lib/apt/lists/*
 
 **Benefits:**
 
-•	Fewer layers result in smaller images.
+•	Fewer layers result in **smaller images**.
 
-•	Reduces build time and speeds up deployments.
+•	Reduces **build time** and speeds up deployments.
 
 ---
 
 **3. Use Multi-Stage Builds**
 
-Multi-stage builds help create lean production images by compiling and building dependencies in one stage and copying only necessary artifacts to the final image.
+Multi-stage builds help create **lean production images** by compiling and building dependencies in one stage and copying only necessary artifacts to the final image.
 
 ✅ **Example: Go Application**
 
@@ -84,15 +84,15 @@ CMD ["myapp"]
 
 🔹 **Why use Multi-Stage Builds?**
 
-•	Keeps the final image small & secure.
+•	Keeps the final image **small & secure.**
 
-•	Removes unnecessary build tools from production.
+•	Removes **unnecessary build tools** from production.
 
 ---
 
 **4. Avoid Running Containers as Root**
 
-By default, containers run as root, which is a major security risk. Always create a non-root user.
+By default, containers run as **root**, which is a major security risk. Always create a **non-root user.**
 
 ✅ **Best Practice**
 
@@ -112,9 +112,9 @@ USER appuser
 CMD ["node", "server.js"]
 ```
 
-•	Prevents privilege escalation attacks.
+•	Prevents **privilege escalation attacks.**
 
-•	Reduces the risk of malicious exploits.
+•	Reduces the risk of **malicious exploits.**
 
 ---
 
