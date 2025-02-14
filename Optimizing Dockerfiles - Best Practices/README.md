@@ -378,6 +378,8 @@ HEALTHCHECK --interval=30s --timeout=5s --retries=3 \
 CMD ["node", "src/server.js"]
 ```
 
+---
+
 🔹 **Explanation of Best Practices Used**
 
 **1. Minimal Base Image** (node:18-slim)
