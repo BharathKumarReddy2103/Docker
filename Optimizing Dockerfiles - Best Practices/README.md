@@ -316,13 +316,13 @@ Optimizing Dockerfiles **improves security, speeds up builds, and reduces costs*
 
 **Real-World Example: Creating an Optimized Dockerfile for a Node.js Application**
 
-Let's apply the best practices we discussed to a real-world example: containerizing a Node.js application.
+Let's apply the **best practices** we discussed to a real-world example: **containerizing a Node.js application.**
 
 ---
 
 📌 **Scenario**
 
-You are deploying a Node.js REST API that uses Express.js and connects to a MongoDB database. You want to create an optimized Dockerfile following best practices.
+You are deploying a **Node.js REST API** that uses **Express.js** and connects to a **MongoDB database**. You want to create an **optimized Dockerfile** following best practices.
 
 ---
 
@@ -382,35 +382,35 @@ CMD ["node", "src/server.js"]
 
 **1. Minimal Base Image** (node:18-slim)
 
-•	Using node:18-slim instead of node:18 reduces the image size by ~70%.
+•	Using node:18-slim instead of node:18 reduces the image size **by ~70%.**
 
 **2. Efficient Caching with** COPY package.json package-lock.json ./
 
-•	This ensures that npm install runs only when dependencies change.
+•	This ensures that npm install runs **only when dependencies change.**
 
-•	If we copied all files first, changes in source code would invalidate the cache, forcing unnecessary reinstallation of dependencies.
+•	If we copied all files first, changes in source code would invalidate the cache, forcing **unnecessary reinstallation** of dependencies.
 
 3. **Multi-Stage Build (Optional)**
 
-•	If the app requires compilation (e.g., TypeScript), we would use multi-stage builds.
+•	If the app requires compilation (e.g., TypeScript), we would use **multi-stage builds.**
 
 4. **Non-Root User**
 
-•	Running as root is a security risk.
+•	Running as root is a **security risk.**
 
 •	We create a user (nodeuser) and switch to it.
 
 5. **Environment Variables** (NODE_ENV=production)
 
-•	The NODE_ENV variable is set to production, improving performance.
+•	The NODE_ENV variable is set to production, improving **performance.**
 
 6. **Exposing Only Necessary Ports** (EXPOSE 3000)
 
-•	We only expose the required port instead of exposing all ports.
+•	We **only expose the required port** instead of exposing all ports.
 
 7. **Health Check**
 
-•	The container is checked every 30s using curl, ensuring that the API is healthy.
+•	The container is checked every **30s** using curl, ensuring that the API is **healthy.**
 
 ---
 
@@ -445,11 +445,11 @@ docker build -t node-app .
 docker run -d --name my-node-app -p 3000:3000 --memory=512m --cpus=1 node-app
 ```
 
-•	-d → Runs in detached mode (background).
+•	-d → Runs in **detached mode** (background).
 
-•	-p 3000:3000 → Maps container port 3000 to host port 3000.
+•	-p 3000:3000 → Maps **container port 3000** to **host port 3000.**
 
-•	--memory=512m --cpus=1 → Sets resource limits.
+•	--memory=512m --cpus=1 → Sets **resource limits.**
 
 ---
 
@@ -463,7 +463,7 @@ docker inspect --format='{{json .State.Health}}' my-node-app
 
 🔹 **Pushing to GitHub**
 
-After testing, commit the Dockerfile to your GitHub repository:
+After testing, **commit the Dockerfile** to your GitHub repository:
 
 ```bash
 git add Dockerfile .dockerignore
