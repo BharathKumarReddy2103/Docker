@@ -313,3 +313,193 @@ Optimizing Dockerfiles improves security, speeds up builds, and reduces costs. B
 •	Keep images updated & scan for vulnerabilities.
 
 --- 
+
+**Real-World Example: Creating an Optimized Dockerfile for a Node.js Application**
+
+Let's apply the best practices we discussed to a real-world example: containerizing a Node.js application.
+
+---
+
+📌 **Scenario**
+
+You are deploying a Node.js REST API that uses Express.js and connects to a MongoDB database. You want to create an optimized Dockerfile following best practices.
+
+---
+
+🔹 **Project Structure**
+
+```bash
+node-app/
+│── src/
+│   ├── server.js
+│   ├── routes.js
+│   ├── config.js
+│── package.json
+│── package-lock.json
+│── .dockerignore
+│── Dockerfile
+```
+
+---
+
+✅ **Optimized Dockerfile**
+
+```bash
+#   Use an official, minimal base image
+FROM node:18-slim AS builder
+
+#   Set the working directory inside the container
+WORKDIR /app
+
+#   Copy package.json and package-lock.json first (Leverage caching)
+COPY package.json package-lock.json ./
+
+#   Install dependencies before copying the rest of the files
+RUN npm install --production
+
+#   Copy application source code
+COPY src ./src
+
+#   Use a non-root user for security
+RUN useradd -m nodeuser
+USER nodeuser
+
+#   Set an environment variable
+ENV NODE_ENV=production
+
+#   Expose the port that the app runs on
+EXPOSE 3000
+
+#   Use a health check to monitor container health
+HEALTHCHECK --interval=30s --timeout=5s --retries=3 \
+    CMD curl -f http://localhost:3000/health || exit 1
+
+#   Define the command to run the application
+CMD ["node", "src/server.js"]
+```
+
+🔹 **Explanation of Best Practices Used**
+
+**1. Minimal Base Image** (node:18-slim)
+
+•	Using node:18-slim instead of node:18 reduces the image size by ~70%.
+
+**2. Efficient Caching with** COPY package.json package-lock.json ./
+
+•	This ensures that npm install runs only when dependencies change.
+
+•	If we copied all files first, changes in source code would invalidate the cache, forcing unnecessary reinstallation of dependencies.
+
+3. **Multi-Stage Build (Optional)**
+
+•	If the app requires compilation (e.g., TypeScript), we would use multi-stage builds.
+
+4. **Non-Root User**
+
+•	Running as root is a security risk.
+
+•	We create a user (nodeuser) and switch to it.
+
+5. **Environment Variables** (NODE_ENV=production)
+
+•	The NODE_ENV variable is set to production, improving performance.
+
+6. **Exposing Only Necessary Ports** (EXPOSE 3000)
+
+•	We only expose the required port instead of exposing all ports.
+
+7. **Health Check**
+
+•	The container is checked every 30s using curl, ensuring that the API is healthy.
+
+---
+
+🔹 **.dockerignore File**
+
+To prevent unnecessary files from being copied into the image, create a .dockerignore file:
+
+```bash
+node_modules
+.git
+*.log
+.env
+Dockerfile
+README.md
+```
+
+---
+
+🔹 **Running the Container**
+
+Once the Dockerfile is created, build and run the container:
+
+**1. Build the Docker Image**
+
+```bash
+docker build -t node-app .
+```
+
+**2. Run the Container**
+
+```bash
+docker run -d --name my-node-app -p 3000:3000 --memory=512m --cpus=1 node-app
+```
+
+•	-d → Runs in detached mode (background).
+
+•	-p 3000:3000 → Maps container port 3000 to host port 3000.
+
+•	--memory=512m --cpus=1 → Sets resource limits.
+
+---
+
+🔹 **Verifying Health Check**
+
+```bash
+docker inspect --format='{{json .State.Health}}' my-node-app
+```
+
+---
+
+🔹 **Pushing to GitHub**
+
+After testing, commit the Dockerfile to your GitHub repository:
+
+```bash
+git add Dockerfile .dockerignore
+git commit -m "Added optimized Dockerfile for Node.js app"
+git push origin main
+```
+---
+
+🔹 **Summary of Optimizations**
+
+✅ Minimal base image (node:18-slim)
+
+✅ Efficient layer caching (COPY package.json first)
+
+✅ Uses non-root user for security
+
+✅ Includes .dockerignore for optimized builds
+
+✅ Defines environment variables (NODE_ENV=production)
+
+✅ Exposes only required ports (3000)
+
+✅ Adds a health check for reliability
+
+✅ Runs container with CPU & memory limits
+
+---
+
+🚀 **Next Steps**
+
+🔹 Fork this repository to keep a reference
+
+🔹 Star this repository if you find it useful
+
+🔹 Follow me on GitHub for more DevOps content
+
+---
+
+This real-world example ensures that your Docker images are optimized, secure, and production-ready. 🚀
