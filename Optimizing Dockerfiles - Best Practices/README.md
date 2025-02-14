@@ -392,25 +392,25 @@ CMD ["node", "src/server.js"]
 
 •	If we copied all files first, changes in source code would invalidate the cache, forcing **unnecessary reinstallation** of dependencies.
 
-3. **Multi-Stage Build (Optional)**
+**3. Multi-Stage Build (Optional)**
 
 •	If the app requires compilation (e.g., TypeScript), we would use **multi-stage builds.**
 
-4. **Non-Root User**
+**4. Non-Root User**
 
 •	Running as root is a **security risk.**
 
 •	We create a user (nodeuser) and switch to it.
 
-5. **Environment Variables** (NODE_ENV=production)
+**5. Environment Variables** (NODE_ENV=production)
 
 •	The NODE_ENV variable is set to production, improving **performance.**
 
-6. **Exposing Only Necessary Ports** (EXPOSE 3000)
+**6. Exposing Only Necessary Ports** (EXPOSE 3000)
 
 •	We **only expose the required port** instead of exposing all ports.
 
-7. **Health Check**
+**7. Health Check**
 
 •	The container is checked every **30s** using curl, ensuring that the API is **healthy.**
 
