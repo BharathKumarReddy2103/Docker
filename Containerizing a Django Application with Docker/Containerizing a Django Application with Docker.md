@@ -195,7 +195,7 @@ Run in **interactive mode**:
 
 ```sh
 docker run -it django-app
-``
+```
 
 Check logs:
 
