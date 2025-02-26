@@ -2,7 +2,7 @@
 
 **Introduction**
 
-Welcome to the **Docker** guide This repository is designed to help you understand Docker fundamentals, from basic concepts to advanced usage.
+Welcome to the **Docker** guide. This repository is designed to help you understand Docker fundamentals, from basic concepts to advanced usage.
 
 This guide covers:
 
