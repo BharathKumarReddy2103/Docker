@@ -55,7 +55,7 @@ There are **two ways** to deploy containers:
 
 **1.	Directly on a physical server**
 
-o	Install a **container runtime** like Docker or Podman.
+     o	Install a **container runtime** like Docker or Podman.
 
 o	Run multiple containers on top of the OS.
 
