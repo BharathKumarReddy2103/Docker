@@ -97,11 +97,11 @@ The final image size is only **1.83MB** – a 99% reduction from 861MB.
 
 **Why Use Distroless Images?**
 
-✔ Security – Fewer attack surfaces, reducing vulnerabilities.
+**✔ Security** – Fewer attack surfaces, reducing vulnerabilities.
 
-✔  Smaller Size – No unnecessary dependencies.
+**✔  Smaller Size** – No unnecessary dependencies.
 
-✔ Performance – Faster builds and efficient runtime execution.
+**✔ Performance** – Faster builds and efficient runtime execution.
 
 **Using Distroless Images**
 
