@@ -12,7 +12,7 @@ To address data persistence challenges, Docker provides two solutions:
 
 **1.	Bind Mounts:**
 
-  **o	Definition**: Bind mounts allow you to mount a file or directory from the host machine into a container.
+   **o	Definition**: Bind mounts allow you to mount a file or directory from the host machine into a container.
        
 **o	Use Cases:** Ideal for sharing configuration files, source code, or other data between the host and the container.
 
