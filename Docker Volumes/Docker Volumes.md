@@ -130,7 +130,7 @@ docker volume rm my_volume
 
 ---
 
-**Using -v vs --mount in Docker**
+**Using** -v **vs** --mount **in Docker**
 
 There are two ways to define mounts in Docker:
 
