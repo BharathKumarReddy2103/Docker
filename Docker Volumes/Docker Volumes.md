@@ -1,6 +1,7 @@
 **Docker Storage: Bind Mounts vs Volumes**
 
-Introduction
+**Introduction**
+
 Containers are lightweight and ephemeral, meaning they do not persist data by default. This poses challenges when dealing with **data storage** and **persistence** in containerized applications.
 
 To address this, **Docker provides two solutions** for managing persistent data:
