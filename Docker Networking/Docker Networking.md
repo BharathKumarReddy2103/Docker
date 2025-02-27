@@ -8,9 +8,9 @@ Docker networking is a key concept in containerized environments. It enables con
 
 Containers often need to:
 
-**1.	Communicate with other containers** (e.g., frontend needs to talk to backend).
+1.	**Communicate with other containers** (e.g., frontend needs to talk to backend).
 
-**2.	Be isolated from other containers** for security reasons (e.g., payment services should not be exposed to unauthorized users).
+2.	**Be isolated from other containers** for security reasons (e.g., payment services should not be exposed to unauthorized users).
 
 **How Docker Networking Works**
 
