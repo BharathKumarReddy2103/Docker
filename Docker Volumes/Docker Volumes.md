@@ -52,6 +52,7 @@ docker run -d \
    --name my_container \
    --mount type=volume,source=my_volume,target=/app \
    nginx:latest
+```
 
 This command runs an Nginx container named my_container and mounts my_volume to the /app directory inside the container.
 
