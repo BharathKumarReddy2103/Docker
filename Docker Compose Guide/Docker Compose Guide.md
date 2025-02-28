@@ -217,7 +217,7 @@ Docker Compose is a **powerful tool** for managing multi-container applications.
 
 **Next Steps**
 
-1.	Explore **Docker Compose examples**: Awesome Compose GitHub Repository
+1.	Explore **Docker Compose examples**: (https://github.com/docker/awesome-compose)
 
 2.	Read **official Docker Compose documentation**.
   
