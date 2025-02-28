@@ -222,4 +222,3 @@ Docker Compose is a **powerful tool** for managing multi-container applications.
 2.	Read **official Docker Compose documentation**.
   
 3.	Try **writing your own Docker Compose files**.
-4.	
