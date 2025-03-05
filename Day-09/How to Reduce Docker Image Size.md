@@ -252,24 +252,37 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 **Using Tools like** dive and docker-slim**
 
-dive: Analyze and Reduce Image Size
+dive: **Analyze and Reduce Image Size**
 
-•	Install dive:
-•	brew install dive  # macOS
-•	sudo apt install dive  # Ubuntu
-•	Run dive to inspect layers:
-•	dive my-docker-image
+• Install dive:
 
-docker-slim: Automatically Minimize Images
+```sh
+brew install dive  # macOS
+sudo apt install dive  # Ubuntu
+```
 
-•	Install docker-slim:
-•	curl -sL https://downloads.dockerslim.com/install.sh | sudo -E bash -
-•	Minify an image:
-•	docker-slim build my-docker-image
+• Run dive to inspect layers:
 
-Conclusion
+```sh
+dive my-docker-image
+```
 
-By following these best practices, you can significantly reduce Docker image sizes, improving performance, security, and efficiency in production environments.
+docker-slim: **Automatically Minimize Images**
 
-  Want to contribute? Feel free to open an issue or PR in this repository!
+• Install docker-slim:
 
+```sh
+curl -sL https://downloads.dockerslim.com/install.sh | sudo -E bash -
+```
+
+• Minify an image:
+
+```sh
+docker-slim build my-docker-image
+```
+
+**Conclusion**
+
+By following these best practices, you can significantly **reduce Docker image sizes, improving performance, security, and efficiency** in production environments.
+
+🔗 Want to contribute? Feel free to open an issue or PR in this repository!
