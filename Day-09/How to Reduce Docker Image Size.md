@@ -47,7 +47,7 @@ Reducing the size of Docker images is critical for several reasons:
 •	Example:
 
 ```sh
-Dockerfile
+**Dockerfile**
 
 FROM ubuntu:latest  # ❌ Avoid large OS images
 ```
