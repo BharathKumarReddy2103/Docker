@@ -164,6 +164,7 @@ COPY myfile.txt /app/myfile.txt  #   Use COPY instead of ADD
 
 ```sh
 Dockerfile
+
 RUN apt-get install -y --no-install-recommends curl
 ```
 
@@ -173,6 +174,7 @@ RUN apt-get install -y --no-install-recommends curl
 
 ```sh
 Dockerfile
+
 FROM python:3.11-slim  #   Smaller version of Python image
 ```
 
