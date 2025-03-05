@@ -1,15 +1,24 @@
 **Optimizing Docker Image Size for Production**
 
-## Table of Contents
-1. [Why Reducing Docker Image Size Matters](#why-reducing-docker-image-size-matters)  
-2. [Best Practices for Reducing Image Size](#best-practices-for-reducing-image-size)  
-3. [Real-World Examples and Dockerfiles](#real-world-examples-and-dockerfiles)  
-4. [Comparison of Optimization Techniques](#comparison-of-optimization-techniques)  
-5. [Multi-Stage Builds and Their Benefits](#multi-stage-builds-and-their-benefits)  
-6. [Common Mistakes and How to Avoid Them](#common-mistakes-and-how-to-avoid-them)  
-7. [Using Tools like `dive` and `docker-slim`](#using-tools-like-dive-and-docker-slim)  
-8. [Other Industry-Recommended Approaches](#other-industry-recommended-approaches)  
-9. [Conclusion](#conclusion)
+**Table of Contents**
+
+1.	Why Reducing Docker Image Size Matters
+  
+2.	Best Practices for Reducing Image Size
+  
+3.	Real-World Examples and Dockerfiles
+	
+4.	Comparison of Optimization Techniques
+  
+5.	Multi-Stage Builds and Their Benefits
+  
+6.	Common Mistakes and How to Avoid Them
+
+7.	Using Tools like dive and docker-slim
+  
+8.	Other Industry-Recommended Approaches
+
+9.	Conclusion
 
 ---
 
