@@ -287,4 +287,4 @@ docker-slim build my-docker-image
 
 By following these best practices, you can significantly **reduce Docker image sizes, improving performance, security, and efficiency** in production environments.
 
-🔗 Want to contribute? Feel free to open an issue or PR in this repository!
+🔗 Want to contribute? Feel free to open an issue or PR in this repository.
