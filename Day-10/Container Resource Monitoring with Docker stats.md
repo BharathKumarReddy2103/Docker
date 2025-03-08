@@ -170,8 +170,11 @@ docker exec -it <container_id> tcpdump -i eth0
 **Interpreting Disk I/O Levels**
 
 ✅ **<10MB** → Expected for lightweight apps
+
 ⚠️ **10MB - 500MB** → Moderate, typical for logging or caching
+
 🚨 **500MB - 5GB** → High, likely due to frequent file operations or active databases
+
 🔥 **>5GB → Excessive!** May indicate inefficient logging, batch jobs, or heavy writes
 
 💡 **Optimizing High Disk I/O:**
