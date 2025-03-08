@@ -8,19 +8,19 @@ Docker provides the docker stats command, a built-in tool that offers real-time 
 
 In this guide, we will explore:
 
-•	How docker stats works
+**•	How docker stats works**
 
-•	Understanding different metrics displayed
+**•	Understanding different metrics displayed**
 
-•	How to use docker stats with examples
+**•	How to use docker stats with examples**
 
-•	Analyzing the output for performance monitoring
+**•	Analyzing the output for performance monitoring**
 
-•	Real-world use cases
+**•	Real-world use cases**
 
-•	Automating monitoring using scripts
+**•	Automating monitoring using scripts**
 
-•	A comparison with other container monitoring tools
+**•	A comparison with other container monitoring tools**
 
 ---
 
