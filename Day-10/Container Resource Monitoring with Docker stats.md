@@ -25,6 +25,7 @@ In this guide, we will explore:
 ---
 
 **Understanding** docker stats
+
 The docker stats command provides a real-time stream of resource usage statistics for containers. When executed, it displays the following key metrics:
 
 | **Metric**         | **Description** |
