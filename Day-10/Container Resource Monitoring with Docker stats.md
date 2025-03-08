@@ -100,7 +100,9 @@ The docker stats output provides insights into container performance, helping to
 **Interpreting CPU Usage Levels**
 
 ✅ **<10%** → Low usage, mostly idle
+
 ⚠️ **10-50%** → Moderate usage, typical for many workloads
+
 🚨 >80%→ High CPU usage, potential bottleneck
   
 💡 **Limit CPU usage for a container to prevent excessive resource consumption**:
