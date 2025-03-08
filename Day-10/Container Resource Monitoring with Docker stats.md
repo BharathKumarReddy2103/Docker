@@ -128,7 +128,7 @@ docker run --cpus="1.5" your_container
 **•	Formula:**
 
 ```sh
-•	Memory % = (MEM USAGE / MEM LIMIT) * 100
+Memory % = (MEM USAGE / MEM LIMIT) * 100
 ```
 
 **Interpreting Memory Usage Levels**
