@@ -200,7 +200,9 @@ o	Optimize **query performance.**
 **Interpreting Process Counts**
 
 ✅ **1-10** → Simple applications
+
 ⚠️ **10-50** → Moderate complexity
+
 🚨 **>50** → Possible process leaks
 
 💡 **Limit the number of processes in a container to prevent resource exhaustion:**
