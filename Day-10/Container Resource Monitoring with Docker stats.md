@@ -150,6 +150,7 @@ Memory % = (MEM USAGE / MEM LIMIT) * 100
 **Interpreting Network Traffic**
 
 ✅ **Low network activity?** The application might be idle.
+
 ⚠️ **High network I/O?** Investigate excessive data transfer or potential data leaks.
 
 💡 **Inspect network traffic inside a container using** tcpdump:
