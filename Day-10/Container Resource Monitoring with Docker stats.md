@@ -313,8 +313,11 @@ docker stats is a powerful built-in tool for real-time container resource monito
 **Best Practices:**
 
 •	Use docker stats regularly to monitor container health.
+
 •	Automate monitoring using scripts or external tools like Prometheus.
+
 •	Combine docker stats with cAdvisor, Prometheus, or ELK for detailed analysis.
+
 •	Set resource limits (--memory, --cpus) to prevent resource contention.
 
 By leveraging **docker stats** efficiently, DevOps engineers can ensure smooth operation of containerized applications.
