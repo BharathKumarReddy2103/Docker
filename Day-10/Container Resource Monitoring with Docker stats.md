@@ -137,7 +137,7 @@ Memory % = (MEM USAGE / MEM LIMIT) * 100
 
 ⚠️ **50-80%** → Monitor closely
 
-🚨 **>80%** → Risk of Out of Memory (OOM) errors
+🚨 **>80%** → Risk of **Out of Memory (OOM) errors**
 
 ---
 
